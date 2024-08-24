@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 
 // Image storage
 const storage = multer.diskStorage({
-  destination: "./upload/images",
+  destination: "./upload",
   filename: (req, file, cb) => {
     return cb(
       null,
@@ -34,7 +34,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // Creating upload endpoint for images
-app.use("/images", express.static("upload/images"));
+app.use("/images", express.static("upload"));
 
 app.post("/upload", upload.single("product"), (req, res) => {
   res.json({
