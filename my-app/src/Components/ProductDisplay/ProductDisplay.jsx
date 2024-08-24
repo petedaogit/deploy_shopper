@@ -39,10 +39,11 @@ function ProductDisplay(props) {
           </div>
         </div>
         <div className="productdisplay-right-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere
-          magni sunt dignissimos non, sapiente aliquam dolore esse blanditiis
-          dolor soluta rerum tempora molestiae optio! Dolores saepe consequatur
-          iure a.
+          Elevate your style with this timeless long-sleeve red turtleneck.
+          Crafted with premium materials for comfort and durability, this
+          versatile piece is perfect for layering or wearing on its own. The
+          classic turtleneck design offers a touch of sophistication, while the
+          vibrant red color adds a pop of personality.
         </div>
         <div className="productdisplay-right-size">
           <h1>Select Size</h1>

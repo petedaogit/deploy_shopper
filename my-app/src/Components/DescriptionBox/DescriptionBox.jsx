@@ -9,13 +9,12 @@ function DescriptionBox() {
       </div>
       <div className="descriptionbox-description">
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic vel
-          ratione, placeat tempora ullam saepe totam numquam consequatur.
-          Laboriosam quisquam blanditiis deserunt ipsam dolores harum itaque qui
-          velit, natus sunt. Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Error, numquam! Aut velit ipsum minima nesciunt doloribus,
-          necessitatibus magni. Quo porro facilis nam laborum aspernatur, est
-          deleniti deserunt quod labore voluptatum.lorem
+          I absolutely love this long-sleeve red turtleneck! The quality is
+          fantastic, and the fit is true to size. The fabric is soft and
+          comfortable, making it perfect for layering or wearing on its own. The
+          red color is vibrant and adds a pop of personality to any outfit. I've
+          already gotten so many compliments on it! Highly recommend this
+          purchase.
         </p>
       </div>
     </div>

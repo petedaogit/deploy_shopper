@@ -43,7 +43,7 @@ app.post("/upload", upload.single("product"), (req, res) => {
   });
 });
 
-//Schema for creating products (mongoDB)
+//Schema for Product model (mongoDB)
 const Product = mongoose.model("Product", {
   id: {
     type: Number,
@@ -79,6 +79,7 @@ const Product = mongoose.model("Product", {
   },
 });
 
+//endpoint for adding product
 app.post("/addproduct", async (req, res) => {
   let products = await Product.find({});
   let id;
@@ -99,7 +100,7 @@ app.post("/addproduct", async (req, res) => {
   });
   console.log(product);
   await product.save();
-  console.log("Product saved successfully!");
+  console.log("Saved");
   res.json({
     success: true,
     name: req.body.name,
