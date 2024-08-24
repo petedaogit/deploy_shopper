@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 
 // Image storage
 const storage = multer.diskStorage({
-  destination: "./upload",
+  destination: "upload",
   filename: (req, file, cb) => {
     return cb(
       null,
