@@ -11,7 +11,6 @@ function AddProduct() {
     new_price: "",
     old_price: "",
   });
-  const deploymentUrl = "https://deploy-shopper.onrender.com";
 
   const imageHandler = (e) => {
     setImage(e.target.files[0]);
@@ -27,7 +26,7 @@ function AddProduct() {
     let formData = new FormData();
     formData.append("product", image);
 
-    await fetch(`${deploymentUrl}/upload`, {
+    await fetch("https://deploy-shopper.onrender.com/upload", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -39,7 +38,7 @@ function AddProduct() {
         responseData = data;
       });
     if (responseData.success) {
-      product.image = `${deploymentUrl}/images/${responseData.image_filename}`;
+      product.image = responseData.image_url;
       console.log(product);
       await fetch("https://deploy-shopper.onrender.com/addproduct", {
         method: "POST",
