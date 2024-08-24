@@ -11,7 +11,7 @@ function LoginSignup() {
   const login = async () => {
     console.log("Login func", formData);
     let responseData;
-    await fetch("http://localhost:4000/login", {
+    await fetch("https://deploy-shopper.onrender.com/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -31,7 +31,7 @@ function LoginSignup() {
   const signup = async () => {
     console.log("Signup func", formData);
     let responseData;
-    await fetch("http://localhost:4000/signup", {
+    await fetch("https://deploy-shopper.onrender.com/signup", {
       method: "POST",
       headers: {
         Accept: "application/json",
